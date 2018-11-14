@@ -8720,18 +8720,20 @@ var PS = {};
               width: Data_Int.toNumber(Nemo_Constants.scene.width),
               height: Data_Int.toNumber(Nemo_Constants.scene.height)
           })();
+          Graphics_Canvas.setFont(ctx)("bold 256px sans-serif")();
+          Graphics_Canvas.fillText(ctx)("\ud83d\udce6")(384.0)(575.0)();
           Graphics_Canvas.setFont(ctx)("bold 128px sans-serif")();
           Graphics_Canvas.setFillStyle(ctx)(Nemo_Data_Color.colorToCode(Nemo_Data_Color.Lime.value))();
-          Graphics_Canvas.fillText(ctx)("N")(300.0)(544.0)();
+          Graphics_Canvas.fillText(ctx)("N")(300.0)(512.0)();
           Graphics_Canvas.setFillStyle(ctx)(Nemo_Data_Color.colorToCode(Nemo_Data_Color.Aqua.value))();
-          Graphics_Canvas.fillText(ctx)("E")(415.0)(544.0)();
+          Graphics_Canvas.fillText(ctx)("E")(415.0)(512.0)();
           Graphics_Canvas.setFillStyle(ctx)(Nemo_Data_Color.colorToCode(Nemo_Data_Color.Fuchsia.value))();
-          Graphics_Canvas.fillText(ctx)("M")(515.0)(544.0)();
+          Graphics_Canvas.fillText(ctx)("M")(515.0)(512.0)();
           Graphics_Canvas.setFillStyle(ctx)(Nemo_Data_Color.colorToCode(Nemo_Data_Color.Yellow.value))();
-          Graphics_Canvas.fillText(ctx)("O")(640.0)(544.0)();
+          Graphics_Canvas.fillText(ctx)("O")(640.0)(512.0)();
           Graphics_Canvas.setFont(ctx)("64px sans-serif")();
           Graphics_Canvas.setFillStyle(ctx)(Nemo_Data_Color.colorToCode(Nemo_Data_Color.White.value))();
-          Graphics_Canvas.fillText(ctx)("HAVE FUN!")(350.0)(700.0)();
+          Graphics_Canvas.fillText(ctx)("Powered by Creativity")(180.0)(700.0)();
           return Graphics_Canvas.restore(ctx)();
       };
   };

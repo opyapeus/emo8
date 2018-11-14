@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Play nemo games online. A functional game engine for creating emoji games.">
+    <meta name="keywords" content="game,emoji,functional,online,nemo">
+    <link rel="stylesheet" href="css/style.css">
     <title>NEMO GAMES</title>
 </head>
 
-<body style="background-color: #000000; color: #ffffff;">
+<body>
     <h1>
-        <span style="color: #00ff00;">N</span>
-        <span style="color: #00ffff;">E</span>
-        <span style="color: #ff00ff;">M</span>
-        <span style="color: #ffff00;">O</span>
-        <span> </span>
+        <span class="logo-n">N</span>
+        <span class="logo-e">E</span>
+        <span class="logo-m">M</span>
+        <span class="logo-o">O</span>
+        <span>📦</span>
         <span>GAMES</span>
     </h1>
-    <p>
-        <a href="https://github.com/opyapeus/purescript-nemo">NEMO Repository on GitHub</a>
-    </p>
+    <ul class="items">
+        <li>
+            <a href="public/index.html#emodius">
+                <figure>
+                    <img src="img/emodius-half.gif" width="180" height="180">
+                    <figcaption>Emodius</figcaption>
+                </figure>
+            </a>
+        </li>
+    </ul>
     <div>
         <p>Controls</p>
-        <pre style="font-family: Consolas, 'Courier New', Courier, Monaco, monospace;">
+        <pre class="ascii-art">
  /¯¯¯\_/¯¯¯\
 |  W  |  ↑  |
 | A D | ← → |
 |  S  |  ↓  |
  \___/¯\___/
         </pre>
+        <p>For mobile, it is equivalent to keyboard inputs that swiping on the right or left side of the screen.</p>
+        <p>※ The swipe origin is the touch position which started.</p>
     </div>
-    <img src="img/emodius.gif" width="360" height="360">
-    <ul>
-        <li>
-            <a href="public/index.html#emodius">Emodius</a>
-        </li>
-    </ul>
+    <p>
+        <a href="https://github.com/opyapeus/purescript-nemo">NEMO Repository on GitHub</a>
+    </p>
 </body>
 
 </html>

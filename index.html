@@ -5,33 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Play nemo games online. A functional game engine for creating emoji games.">
-    <meta name="keywords" content="game,emoji,functional,online,nemo">
+    <meta name="description" content="Play emo8 games on the web. A functional 2D game engine that can create emoji games.">
+    <meta name="keywords" content="game,emoji,2d,emo8,web">
     <link rel="stylesheet" href="css/style.css">
-    <title>NEMO GAMES</title>
+    <title>EMO8 GAMES</title>
 </head>
 
 <body>
-    <h1>
-        <span class="logo-n">N</span>
-        <span class="logo-e">E</span>
-        <span class="logo-m">M</span>
-        <span class="logo-o">O</span>
-        <span>📦</span>
-        <span>GAMES</span>
-    </h1>
-    <ul class="items">
-        <li>
-            <a href="public/index.html#emodius">
-                <figure>
-                    <img src="img/emodius-quarter.gif" width="180" height="180">
-                    <figcaption>Emodius</figcaption>
-                </figure>
-            </a>
-        </li>
-    </ul>
-    <div>
-        <p>Controls</p>
+    <div class="inner">
+        <h1>EMO8 GAMES</h1>
+        <h2>Sample Programs</h2>
+        <ul class="items">
+            <li class="item">
+                <a href="public/hello/index.html">
+                    <figure>
+                        <img src="img/hello.jpg" width="180" height="180">
+                        <figcaption>Hello</figcaption>
+                    </figure>
+                </a>
+                <p>Hello world in emo8.</p>
+            </li>
+            <li class="item">
+                <a href="public/basic/index.html">
+                    <figure>
+                        <img src="img/basic.jpg" width="180" height="180">
+                        <figcaption>Basic</figcaption>
+                    </figure>
+                </a>
+                <p>Basic actions in development mode.</p>
+            </li>
+            <li class="item">
+                <a href="public/emodius/index.html">
+                    <figure>
+                        <img src="img/emodius-quarter.gif" width="180" height="180">
+                        <figcaption>Emodius</figcaption>
+                    </figure>
+                </a>
+                <p>Shooting game example.</p>
+            </li>
+            <li class="item">
+                <a href="public/nekof/index.html">
+                    <figure>
+                        <img src="img/nekof.jpg" width="180" height="180">
+                        <figcaption>Nekof</figcaption>
+                    </figure>
+                </a>
+                <p>Sound example.</p>
+            </li>
+        </ul>
+        <h2>Controller</h2>
+        <h3>Keyboard</h3>
         <pre class="ascii-art">
  /¯¯¯\_/¯¯¯\
 |  W  |  ↑  |
@@ -39,12 +62,20 @@
 |  S  |  ↓  |
  \___/¯\___/
         </pre>
-        <p>For mobile, it is equivalent to keyboard inputs that swiping on the right or left side of the screen.</p>
-        <p>※ The swipe origin is the touch position which started.</p>
+        <h3>Touch Screen (Swipe)</h3>
+        <pre class="ascii-art">
+|¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯|
+|   👆   |   👆   |
+| 👈  👉 | 👈  👉 |
+|   👇   |   👇   |
+|________|________|
+        </pre>
+        <footer>
+            <p>
+                <a href="https://github.com/opyapeus/purescript-emo8">EMO8 Repository on GitHub</a>
+            </p>
+        </footer>
     </div>
-    <p>
-        <a href="https://github.com/opyapeus/purescript-nemo">NEMO Repository on GitHub</a>
-    </p>
 </body>
 
 </html>

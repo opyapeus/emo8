@@ -1,19 +1,22 @@
 body {
+    font-family: sans-serif;
     background-color: #000000;
     color: #ffffff;
 }
 
-.logo-n {
-    color: #00ff00;
-}
-.logo-e {
-    color: #00ffff;
-}
-.logo-m {
-    color: #ff00ff;
-}
-.logo-o {
+a {
+    text-decoration: none;
     color: #ffff00;
+}
+
+figure {
+    margin: 0;
+}
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
 }
 
 .ascii-art {
@@ -26,4 +29,8 @@ body {
     justify-content: space-between;
     list-style: none;
     padding-left: 0;
+}
+
+.item {
+    flex-basis: 0;
 }

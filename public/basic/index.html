@@ -5,33 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NEMO GAME</title>
+    <title>Document</title>
     <!-- to prevent y bounce for mobile -->
-    <script src="patch/inobounce.js"></script>
+    <script src="inobounce.js"></script>
     <style>
-        html {
-            height: 100%;
+        html, body, .wrap {
+            height: 100%
         }
 
         body {
-            height: 100%;
             padding: 0;
             margin: 0;
             background-color: #000000;
-            overflow: hidden;
         }
 
         .wrap {
-            height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         #scene {
-            height: 100%;
-            max-height: 1024px;
             max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
         }
     </style>
@@ -39,17 +35,15 @@
 
 <body>
     <div class="wrap">
-        <canvas id="scene" width="1024" height="1024"></canvas>
+        <canvas id="scene"></canvas>
     </div>
 
-    <!-- tmp -->
+    <script src="app.js"></script>
+    <!-- half size for retina -->
     <script>
-        var urlHash = location.hash;
-        if (urlHash) {
-            var script = document.createElement('script');
-            script.src = 'js/' + urlHash.replace('#', '') + '.js';
-            document.body.appendChild(script);
-        }
+        const canvas = document.getElementById('scene');
+        canvas.style.width = (canvas.width / devicePixelRatio).toString() + 'px';
+        canvas.style.height = (canvas.height / devicePixelRatio).toString() + 'px';
     </script>
 </body>
 
